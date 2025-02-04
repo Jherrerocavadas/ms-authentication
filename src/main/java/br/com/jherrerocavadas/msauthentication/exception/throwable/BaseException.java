@@ -1,6 +1,6 @@
 package br.com.jherrerocavadas.msauthentication.exception.throwable;
 
-import br.com.jherrerocavadas.msauthentication.util.Utils;
+import br.com.jherrerocavadas.msauthentication.util.MessageUtil;
 import org.springframework.context.MessageSource;
 
 public class BaseException extends RuntimeException{
@@ -14,7 +14,7 @@ public class BaseException extends RuntimeException{
     public BaseException(MessageSource messageSource,
                          String placeholder,
                          Object ...parametros) {
-        super(Utils.messageWithParameters(
+        super(MessageUtil.messageWithParameters(
                 messageSource,
                 placeholder,
                 parametros)
@@ -22,7 +22,7 @@ public class BaseException extends RuntimeException{
     }
     public BaseException(MessageSource messageSource,
                          String placeholder) {
-        super(Utils.messageWithoutParameters(
+        super(MessageUtil.messageWithoutParameters(
                 messageSource,
                 placeholder)
         );
