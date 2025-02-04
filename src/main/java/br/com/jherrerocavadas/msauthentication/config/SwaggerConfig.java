@@ -25,7 +25,7 @@ public class SwaggerConfig {
     public OpenAPI apiConfig() {
         return new OpenAPI()
                 .info(new Info().title(applicationName)
-                        .description(new String(applicationDescription.getBytes(), StandardCharsets.UTF_8))
+                        .description(new String(applicationDescription.getBytes(StandardCharsets.ISO_8859_1), StandardCharsets.UTF_8))
                         .version(applicationVersion)
                         .license(new License().name("Apache 2.0").url("http://springdoc.org")))
                 .externalDocs(new ExternalDocumentation()

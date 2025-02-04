@@ -4,7 +4,7 @@ import br.com.jherrerocavadas.msauthentication.entity.ApiRegister;
 import br.com.jherrerocavadas.msauthentication.exception.throwable.ApiNotRegisteredException;
 import br.com.jherrerocavadas.msauthentication.exception.throwable.InvalidRequestFieldsException;
 import br.com.jherrerocavadas.msauthentication.repository.ApiRegisterRepository;
-import br.com.jherrerocavadas.msauthentication.util.Utils;
+import br.com.jherrerocavadas.msauthentication.util.MessageUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.MessageSource;
 import org.springframework.stereotype.Service;
@@ -43,7 +43,7 @@ public class ApiRegisterService {
             if(e instanceof ApiNotRegisteredException){
                 throw e;
             }
-            throw new InvalidRequestFieldsException(Utils.messageWithParameters(
+            throw new InvalidRequestFieldsException(MessageUtil.messageWithParameters(
                     messageSource,
                     "bad.request.exception",
                     e.getLocalizedMessage()
