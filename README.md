@@ -19,11 +19,16 @@ Observação: Nem todos os recursos podem estar implementados e/ou funcionando c
 * [Sobre](#sobre)
 * [Índice](#índice)
 * [Funcionalidades](#funcionalidades)
+* [Estrutura do projeto](#estrutura-do-projeto)
+* [Run Configurations](#run-configurations)
+  * [Template 'Application'](#template-application)
+  * [Template 'Maven'](#template-maven)
+* [Demonstração](#demonstração)
 * [Pré Requisitos](#pré-requisitos)
-    * [Software](#software)
-    * [Outros](#outros)
+  * [Software](#software)
 * [Tecnologias](#tecnologias)
 * [Autor](#autor)
+  * [Johann Herrero Cavadas](#johann-herrero-cavadas)
 
 
 # Funcionalidades
